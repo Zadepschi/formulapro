@@ -88,42 +88,13 @@ h1 {
   font-size: 1.5em;
 }
 @media (max-width: 550px) {
+    h1 {
+  font-size: 20px;
+  margin: 5px;
+
+ 
+}
         #three-container {
-  width: 320px;
-  height: 320px;
-
-}
-
-#three-container canvas {
-  width: 320px !important;
-  height: 320px !important;
-}
-  .controls {
-    height: auto; /* высота подстраивается под контент */
-    padding: 15px;
-    border-radius: 12px;
-    gap: 12px;
-  }
-
-  .controls label {
-    font-size: 1em;
-    flex-grow: 0;
-  }
-
-  .controls input {
-    font-size: 0.9em;
-    padding: 8px;
-  }
-
-  #results {
-    font-size: 1em;
-    margin-top: 8px;
-    flex-grow: 0;
-    padding: 0;
-  }
-}
-@media (max-width: 460px) {
-    #three-container {
   width: 300px;
   height: 300px;
 
@@ -133,13 +104,31 @@ h1 {
   width: 300px !important;
   height: 300px !important;
 }
-    h1 {
-  font-size: 1.6em;
-  margin: 5px;
+  .controls {
+    height: auto; /* высота подстраивается под контент */
+    padding: 5px;
+    border-radius: 12px;
+    gap: 4px;
+  }
 
- 
+  .controls label {
+    font-size: 0.8em;
+    flex-grow: 0;
+  }
+
+  .controls input {
+    font-size: 0.9em;
+    padding: 4px;
+  }
+
+  #results {
+    font-size: 1em;
+    margin-top: 8px;
+    flex-grow: 0;
+    padding: 0;
+  }
 }
-}
+
 
 @media (max-width: 330px) {
     #three-container {
