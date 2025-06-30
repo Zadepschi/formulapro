@@ -1,0 +1,130 @@
+body {
+  font-family: sans-serif;
+
+  background-color: #FEFAE0;
+  margin: 0;
+}
+
+#ui {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+    padding: 10px;
+
+}
+.navbar {
+  background-color: #BFF6C3 !important;
+}
+.navbar .nav-link {
+  color: black !important;
+   font-weight: bold;
+}
+.navbar .navbar-brand {
+  color: black !important;
+   font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.containerBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-block, .result {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.input-block label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input-block input {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-block input:focus {
+  outline: none;
+  border-color: #66b2ff;
+  box-shadow: 0 0 5px rgba(102, 178, 255, 0.5);
+}
+
+canvas {
+  width: 500px;
+  height: 300px;
+  max-width: 100%;
+  margin: 20px auto;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: block;
+}
+
+#results {
+  padding: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .containerBlock {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  canvas {
+    width: 90vw;
+    height: auto;
+  }
+  #results {
+  padding: 10px;
+  line-height: .6;
+}
+.result {
+    padding: 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+ .input-block {
+    height: 200px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .input-block label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .input-block input {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
