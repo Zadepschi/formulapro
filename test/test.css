@@ -1,10 +1,28 @@
 body {
     background-image: url(kletka.jpg);
+
+    
+}
+.navbar {
+  background-color: rgba(132, 223, 255, 0.8) !important;
+}
+.navbar .nav-link {
+  color: black !important;
+   font-weight: bold;
+}
+.navbar .navbar-brand {
+  color: black !important;
+   font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.containerBlok {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     
+
 }
 form {
   
@@ -14,7 +32,7 @@ form {
     flex-direction: column;
     padding: 10px;
     border-radius: 30px;
-    
+   
 }
 .btnEn {
     display: flex;
@@ -24,14 +42,20 @@ form {
     
 }
 .en {
-    background-color: #008CBA; /* Синий цвет */
-    color: white;
+    position: fixed;
+    top: 70px;           /* расстояние от верхнего края */
+    right: 20px;         /* расстояние от правого края */
+    background-color: rgba(132, 223, 255, 0.8); /* полупрозрачный синий */
+    color: black;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    z-index: 999;        /* чтобы не перекрывалась другими элементами */
+    text-decoration: none;
 }
+
 
 .en:hover {
     background-color: #007B9A; /* Более тёмный синий при наведении */
@@ -164,10 +188,13 @@ label:hover {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 @media all and (max-width: 1520px) {

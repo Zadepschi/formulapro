@@ -12,7 +12,9 @@ h1 {
     color: #e6e9ec;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
+.navbar {
+  background-color: #161616 !important;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +59,7 @@ input {
     margin-bottom: 20px;
 }
 
-button {
+.button {
     background-color: rgb(47, 199, 255);;
     color: white;
     font-size: 22px;
@@ -69,7 +71,7 @@ button {
     width: 100%;
 }
 
-button:hover {
+.button:hover {
     background-color:  rgb(28, 151, 196);;
 }
 
@@ -127,7 +129,7 @@ p {
     padding: 8px;
   }
   
-  form button {
+  form .button {
     font-size: 18px;
     padding: 8px 12px;
   }
@@ -196,7 +198,7 @@ p {
     padding: 4px;
   }
   
-  form button {
+  form .button {
     font-size: 14px;
     padding: 8px 8px;
   }

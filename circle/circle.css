@@ -1,0 +1,192 @@
+body {
+  background: #f9fce6;
+  font-family: 'Poppins', sans-serif;
+ 
+  color: #333;
+}
+.bodyBlock {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.navbar {
+  background-color: rgb(47, 199, 255, 0.4) !important;
+}
+.navbar .nav-link {
+  color: black !important;
+   font-weight: bold;
+}
+.navbar .navbar-brand {
+  color: black !important;
+   font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2fc7ff;
+}
+
+.containerBlock {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333;
+  background: rgba(51, 34, 31, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.formBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.labels label {
+  font-weight: 600;
+}
+
+.labels input {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2fc7ff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #1da0cc;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(47, 199, 255, 0.1);
+  border-radius: 8px;
+  width: 95%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.canvasBlock {
+  border: 1px solid #333;
+  border-radius: 15px;
+  background: rgba(51, 34, 31, 0.05);
+  padding: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 920px) {
+  .block {
+    width: 300px;
+  }
+  canvas {
+    width: 360px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.6em;
+    margin: 10px;
+  }
+  .containerBlock {
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  .block {
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+  }
+  .canvasBlock {
+    width: 300px;
+  }
+  canvas {
+    width: 300px;
+  }
+}
+@media (max-width: 550px) {
+
+    h1 {
+        margin: 5px;
+    }
+    .labels {
+        font-size: 14px;
+    }
+    #radius {
+        padding: 3px;
+    }
+    #angle {
+        padding: 3px;
+    }
+    #calcBtn {
+   margin: 5px;
+   padding: 5px;
+    }
+    .result {
+         margin: 5px;
+   padding: 5px;
+   font-size: 18px;
+    }
+    .containerBlock {
+
+  gap: 10px;
+
+}
+}
+
+@media (max-width: 310px) {
+     canvas {
+    width: 270px;
+  }
+    .canvasBlock {
+    width: 270px;
+  }
+}
