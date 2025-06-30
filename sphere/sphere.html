@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere Calculator — Interactive 3D Radius & Volume Tool</title>
+    <link rel="stylesheet" href="sphere.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <h1>Volume and Surface Area of a Sphere in Arbitrary Units</h1>
+<div class="container">
+<form>
+    <p>Enter the radius of the sphere:</p>
+    <span class="rad">R =</span>
+    <input id="inputValue" type="text" placeholder="Enter a value...">
+    <br>
+    <button id="btn">Calculate</button>
+</form>
+
+
+   <div id="three-container"></div>
+   
+<div class="block">
+    <div>
+        <p>Surface area of the sphere:</p>
+        <span id="square">0.00</span>
+    </div>
+    <div>
+        <p class="top">Volume of the sphere:</p>
+        <span id="volume">0.00</span>
+    </div>
+</div>
+</div>
+<br>
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+    <script src="sphere.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+body {
+background-color: #242222;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    color: #e6e9ec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    min-height: 60vh;
+}
+#three-container {
+    width: 400px;
+    height: 400px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(20, 19, 19, 0.8);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.rad {
+    font-size: 32px;
+    color: red;
+    text-shadow: 1px 1px 1px #000000;
+    margin-bottom: 10px;
+}
+canvas {
+     border-radius: 16px;
+}
+input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(47, 199, 255);;
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color:  rgb(28, 151, 196);;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+     background: rgba(20, 19, 19, 0.8);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+.block div {
+    text-align: center;
+    min-width: 150px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f7fd;
+    margin: 0 0 10px;
+}
+
+#square, #volume {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(47, 199, 255);;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+
+@media (max-width: 950px)  {
+    h1 {
+        font-size: 22px;
+    }
+  form {
+    width: 35%;
+  }
+  form p {
+    font-size: 18px;      /* уменьшим размер шрифта */
+  }
+  
+  form .rad {
+    font-size: 20px;
+  }
+  
+  form input {
+    width: 95%;          /* поле ввода растянется по ширине формы */
+    font-size: 18px;
+    padding: 8px;
+  }
+  
+  form button {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+#square, #volume {
+    font-size: 20px;
+}
+p {
+    font-size: 20px;
+}
+#three-container  {
+     width: 350px ;
+  height: 350px ;
+}
+#three-container canvas {
+
+  width: 350px !important;
+  height: 350px !important;
+  display: block;
+}
+}
+
+@media (max-width: 700px) {
+   
+#three-container  {
+     width: 250px ;
+  height: 250px ;
+}
+#three-container canvas {
+
+  width: 250px !important;
+  height: 250px !important;
+  display: block;
+}
+
+    .block {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .container {
+        padding: 5px;
+    }
+        h1 {
+        font-size: 18px;
+        margin: 5px;
+    }
+  form {
+    width: 95%;
+    padding: 10px;
+  }
+  form p {
+    font-size: 14px;      /* уменьшим размер шрифта */
+  }
+  
+  form .rad {
+    font-size: 14px;
+  }
+  
+  form input {
+    width: 95%;          /* поле ввода растянется по ширине формы */
+    font-size: 14px;
+    padding: 4px;
+  }
+  
+  form button {
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+
+#square, #volume {
+    font-size: 14px;
+}
+p {
+    font-size: 14px;
+}
+
+#three-container  {
+     width: 200px ;
+  height: 200px ;
+}
+#three-container canvas {
+
+  width: 200px !important;
+  height: 200px !important;
+  display: block;
+}
+.block {
+    padding: 10px;
+}
+input {
+    font-size: 14px;
+    padding: 5px;
+  
+    margin-bottom: 7px;
+}
+}
+
+@media (max-width: 405px) {
+    .block {
+        width: 90%;
+    }
+}
