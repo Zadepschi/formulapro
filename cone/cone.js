@@ -4,7 +4,7 @@
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       45,
-      1, // aspect will be updated
+      1,
       0.1,
       1000
     );

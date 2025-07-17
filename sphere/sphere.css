@@ -116,7 +116,7 @@ p {
     width: 35%;
   }
   form p {
-    font-size: 18px;      /* уменьшим размер шрифта */
+    font-size: 18px;     
   }
   
   form .rad {
@@ -124,7 +124,7 @@ p {
   }
   
   form input {
-    width: 95%;          /* поле ввода растянется по ширине формы */
+    width: 95%;         
     font-size: 18px;
     padding: 8px;
   }
@@ -185,7 +185,7 @@ p {
     padding: 10px;
   }
   form p {
-    font-size: 14px;      /* уменьшим размер шрифта */
+    font-size: 14px;     
   }
   
   form .rad {
@@ -193,7 +193,7 @@ p {
   }
   
   form input {
-    width: 95%;          /* поле ввода растянется по ширине формы */
+    width: 95%;         
     font-size: 14px;
     padding: 4px;
   }

@@ -76,7 +76,7 @@ button:hover {
   color: white;
 }
 
-/* Мобильная адаптация */
+
 
 @media (max-width: 768px) {
   h1 {

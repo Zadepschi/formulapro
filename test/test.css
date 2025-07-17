@@ -43,22 +43,22 @@ form {
 }
 .en {
     position: fixed;
-    top: 70px;           /* расстояние от верхнего края */
-    right: 20px;         /* расстояние от правого края */
-    background-color: rgba(132, 223, 255, 0.8); /* полупрозрачный синий */
+    top: 70px;           
+    right: 20px;         
+    background-color: rgba(132, 223, 255, 0.8); 
     color: black;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    z-index: 999;        /* чтобы не перекрывалась другими элементами */
+    z-index: 999;        
     text-decoration: none;
 }
 
 
 .en:hover {
-    background-color: #007B9A; /* Более тёмный синий при наведении */
+    background-color: #007B9A; 
 }
 
 .head {

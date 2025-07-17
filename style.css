@@ -210,11 +210,10 @@ body {
   flex-direction: row;
   align-items: center;
   min-height: 100vh;
-  margin: 0 20px;        /* Отступы слева и справа */
-  gap: 60px;             /* Отступ между .word и .container */
+  margin: 0 20px;        
+  gap: 60px;             
   background: #f4fafa;
-  flex-wrap: wrap;       /* Позволяет переносить блоки при узком экране */
-}
+  flex-wrap: wrap;      
 .intro {
   display: flex;
   flex-direction: column;
@@ -227,7 +226,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   user-select: none;
-  flex-shrink: 0;        /* Не сжимать слово при переносе */
+  flex-shrink: 0;        
 }
 
 .welcome {
@@ -242,31 +241,30 @@ img {
   object-fit: cover;
 
   user-select: none;
-  pointer-events: none;  /* Чтобы картинки не перехватывали клики */
+  pointer-events: none;  
   
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;             /* Расстояние между рядами */
+  gap: 10px;             
   max-width: 360px;
-  flex-shrink: 0;        /* Не сжимать контейнер */
+  flex-shrink: 0;       
   
 }
 
 .container > div {
   display: flex;
   justify-content: center;
-  gap: 10px;             /* Расстояние между кнопками в ряду */
-  flex-wrap: wrap;       /* Позволяет переносить кнопки при нехватке места */
-}
+  gap: 10px;            
+  flex-wrap: wrap;      
 
 .btn {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* Центрируем содержимое */
-  gap: 5px;              /* Отступ между картинкой и текстом */
+  align-items: center;    
+  gap: 5px;              
   cursor: pointer;
   padding: 5px 5px;
   background: white;
@@ -274,7 +272,7 @@ img {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   user-select: none;
-  width: 140px;           /* Фиксированная ширина для кнопок */
+  width: 140px;          
   text-align: center;
   color: #333;
   font-weight: 600;
@@ -327,8 +325,8 @@ p {
 
 .btn {
   
-  width: 130px;           /* Фиксированная ширина для кнопок */
-
+  width: 130px;       
   font-size: 14px;
 }
+
 }

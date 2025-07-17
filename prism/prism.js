@@ -1,6 +1,6 @@
 const container = document.getElementById("three-container");
 
-// Создаём сцену и задаём цвет фона
+
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xFDFFC2);
 
@@ -28,7 +28,7 @@ function createBox(a, b, h) {
   if (boxMesh) boxGroup.remove(boxMesh);
   if (boxWireframe) boxGroup.remove(boxWireframe);
 
-  const geometry = new THREE.BoxGeometry(a, h, b); // width, height, depth
+  const geometry = new THREE.BoxGeometry(a, h, b); 
   const material = new THREE.MeshPhongMaterial({
     color: 0xB13BFF,
     transparent: true,
@@ -55,14 +55,14 @@ function scaleToFitBox(a, b, h) {
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientHeight;
 
-  // Рассчитываем размер бокса в 2D проекции (камерное пространство)
+ 
   const maxBoxSize = Math.max(boxSize.x, boxSize.y, boxSize.z);
   const fov = THREE.MathUtils.degToRad(camera.fov);
-  const distance = Math.abs(camera.position.z); // расстояние до камеры
+  const distance = Math.abs(camera.position.z); 
   const visibleHeight = 2 * Math.tan(fov / 2) * distance;
   const visibleWidth = visibleHeight * (containerWidth / containerHeight);
 
-  // Подбираем масштаб так, чтобы объект занимал ~80% ширины и высоты
+ 
   const scaleX = (visibleWidth * 0.8) / boxSize.x;
   const scaleY = (visibleHeight * 0.8) / boxSize.y;
   const scaleZ = (visibleWidth * 0.8) / boxSize.z;

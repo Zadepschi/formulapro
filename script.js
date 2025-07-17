@@ -7,7 +7,7 @@ spans.forEach((span, idx) => {
 		e.target.classList.remove('active');
 	});
 	
-	// Initial animation
+	
 	setTimeout(() => {
 		span.classList.add('active');
 	}, 750 * (idx+1))

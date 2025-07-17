@@ -39,7 +39,7 @@
       ctx.lineWidth = 3;
       ctx.stroke();
 
-      // если угол > 0, рисуем дугу
+     
       if (angleDeg > 0) {
         const startAngle = 0;
         const endAngle = (angleDeg * Math.PI) / 180;
@@ -51,7 +51,7 @@
         ctx.fillStyle = "#ff000055";
         ctx.fill();
 
-        // подпись дуги
+       
         const midAngle = startAngle + (endAngle - startAngle) / 2;
         const labelX = centerX + (scaledRadius / 2) * Math.cos(midAngle);
         const labelY = centerY + (scaledRadius / 2) * Math.sin(midAngle);
@@ -61,7 +61,7 @@
         ctx.fillText(`${angleDeg}°`, labelX, labelY);
       }
 
-      // радиусная линия
+    
       ctx.beginPath();
       ctx.moveTo(centerX, centerY);
       ctx.lineTo(centerX + scaledRadius, centerY);
@@ -69,11 +69,11 @@
       ctx.lineWidth = 2;
       ctx.stroke();
 
-      // подпись радиуса
+    
       ctx.fillStyle = "#333";
       ctx.font = "16px Ubuntu Mono";
       ctx.fillText(`r = ${r}`, centerX + scaledRadius / 2 - 10, centerY - 10);
     }
 
-    // первоначальный вызов
+   
     document.getElementById("calcBtn").click();

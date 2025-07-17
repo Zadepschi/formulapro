@@ -42,7 +42,7 @@
       }
 
       function createObjects() {
-        // Удаляем старые объекты, если есть
+        
         if (sphere) {
           scene.remove(sphere);
           sphere.geometry.dispose();
@@ -55,11 +55,11 @@
           radiusCylinder.material.dispose();
         }
 
-        // Проверяем текущую ширину экрана
+      
         const isMobile = window.innerWidth <= 700;
         const sphereRadius = isMobile ? 0.9 : 1;
 
-        // Сфера
+       
         const sphereGeometry = new THREE.SphereGeometry(sphereRadius, 24, 24);
         const sphereMaterial = new THREE.MeshBasicMaterial({
           color: 0x2fc7ff,
@@ -70,7 +70,7 @@
         sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
         scene.add(sphere);
 
-        // Радиус (цилиндр)
+     
         const radiusLength = sphereRadius;
         const radiusGeometry = new THREE.CylinderGeometry(0.013, 0.013, radiusLength, 16);
         radiusGeometry.translate(0, radiusLength / 2, 0);
@@ -81,7 +81,7 @@
         radiusCylinder.position.set(0, 0, 0);
         scene.add(radiusCylinder);
 
-        // Обновляем надпись
+      
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = '#ff0000';
         ctx.font = isMobile ? '60px Arial' : '30px Arial';
@@ -114,6 +114,6 @@
         createObjects();
       });
 
-      // Вызываем resize при первой загрузке
+      
       window.dispatchEvent(new Event('resize'));
     });

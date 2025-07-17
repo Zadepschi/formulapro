@@ -106,7 +106,7 @@ h1 {
   height: 300px !important;
 }
   .controls {
-    height: auto; /* высота подстраивается под контент */
+    height: auto; 
     padding: 5px;
     border-radius: 12px;
     gap: 4px;

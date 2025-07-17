@@ -13,7 +13,7 @@
       const canvasStyle = window.getComputedStyle(canvas);
       const displayWidth = parseFloat(canvasStyle.width);
 
-      // пропорция 3:2
+     
       const displayHeight = displayWidth * (2 / 3);
 
       canvas.width = displayWidth;
@@ -57,13 +57,13 @@ results.innerHTML = `
   <p><strong>Diagonal d₂:</strong> <span style="color:red;">${d2.toFixed(2)}</span></p>
 `;
 
-      // Вершины без смещения
+      
       let A = { x: 0, y: 0 };
       let B = { x: a, y: 0 };
       let D = { x: b * cosA, y: -b * sinA };
       let C = { x: D.x + a, y: D.y };
 
-      // Границы
+  
       const xs = [A.x, B.x, C.x, D.x];
       const ys = [A.y, B.y, C.y, D.y];
       const minX = Math.min(...xs);
@@ -97,7 +97,7 @@ results.innerHTML = `
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Рисуем фигуру
+    
       ctx.beginPath();
       ctx.moveTo(A.x, A.y);
       ctx.lineTo(B.x, B.y);
@@ -111,7 +111,7 @@ results.innerHTML = `
       ctx.fill();
       ctx.stroke();
 
-      // Точки
+   
       [A, B, C, D].forEach((p) => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, 6, 0, 2 * Math.PI);
@@ -119,13 +119,13 @@ results.innerHTML = `
         ctx.fill();
       });
 
-      // Подписи сторон
+
       ctx.fillStyle = "#000";
       ctx.font = "16px sans-serif";
       ctx.fillText("a", (A.x + B.x) / 2, A.y - 14);
       ctx.fillText("b", (A.x + D.x) / 2 - 18, (A.y + D.y) / 2);
 
-      // Диагонали
+
       ctx.strokeStyle = "#ff0000";
       ctx.setLineDash([6, 6]);
       ctx.beginPath();
